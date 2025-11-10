@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Портфоліо</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f8f8ff;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #7f0eb0;
+      color: white;
+      text-align: center;
+      font-size: 1.5em; 
+      padding: 25px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    }
+
+    nav {
+      background-color: #e6e6fa;
+      text-align: left;
+      padding: 12px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin: 0 18px;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ac58e3;
+    }
+
+    main {
+      display: flex;
+      gap: 20px;
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+
+    section {
+      flex: 3;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      line-height: 1.8; /* трохи розтягнутий текст */
+      font-size: 18px;
+    }
+
+    aside {
+      flex: 1;
+      background-color: #faf0ff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+      font-style: italic;
+    }
+
+    /* Блок "Про мене" */
+    .photo {
+      display: flex;
+      align-items: flex-start;
+      gap: 25px;
+      margin-top: 15px;
+    }
+
+    .profile-photo {
+      width: 300px; 
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .about-text {
+      flex: 1;
+      text-align: justify;
+    }
+
+    form {
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-radius: 10px;
+      max-width: 450px;
+      margin-top: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    input, textarea {
+      width: 100%;
+      margin: 8px 0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #8a2be2;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #6a0dad;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Портфоліо</h1>
+  </header>
+
+  <nav>
+    <a href="#">Головна</a>
+    <a href="#">Про мене</a>
+    <a href="#">Контакти</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Про мене</h2>
+
+      <div class="photo">
+        <img src="D:\My photo.jpg" alt="My photo" class="profile-photo" >
+        
+        <div class="text">
+          <p>Мене звати <strong>Омельян Діана</strong>. Я студентка, яка захоплюється світом технологій і творчості. Вивчаю різні мови програмування та цікавлюся веброзробкою.</p>
+          <p>Програмування для мене — це не лише технічна навичка, а й спосіб втілювати ідеї в життя. Паралельно я люблю малювати та займаюся творчістю.</p>
+          <p>Моя мета — розвиватися як повноцінна ІТ-спеціалістка, створювати корисні й красиві проєкти, поєднуючи логіку з креативом.</p>
+        </div>
+      </div>
+
+      <h3>Форма зв’язку</h3>
+      <form>
+        <label>Ваше ім’я:</label><br>
+        <input type="text" placeholder="Введіть ім’я"><br>
+
+        <label>Ваш email:</label><br>
+        <input type="email" placeholder="Введіть email"><br>
+
+        <label>Повідомлення:</label><br>
+        <textarea rows="4" placeholder="Напишіть повідомлення"></textarea><br>
+
+        <button type="submit">Надіслати</button>
+      </form>
+    </section>
+
+    <aside>
+      <h3>Цікаве</h3>
+      <p>"Чим більше я дізнаюся про програмування, тим більше розумію, що я нічого не знаю."</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Email: <a href="mailto:omelandiana199@gmail.com" style="color: #b19cd9;">omelandiana199@gmail.com</a></p>
+    <p>Телефон: +380956876358</p>
+  </footer>
+
+</body>
+</html>
